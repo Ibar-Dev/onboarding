@@ -1,4 +1,7 @@
 import flet as ft
+import src.page_states as pagestate
+
+
 
 def main(page: ft.Page):
     # Configuramos la alineación de la página para centrar el contenido
@@ -11,7 +14,8 @@ def main(page: ft.Page):
     page.add(titulo)
 
     boton_entrada = ft.Button(
-        "Acceder"
+        "Acceder",
+        on_click= lambda e: pagestate.acceder_a_login(page)
     )
     page.add(boton_entrada)
 
