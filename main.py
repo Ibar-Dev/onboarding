@@ -18,6 +18,9 @@ def main(page: ft.Page):
         on_click= lambda e: pagestate.acceder_a_login(page)
     )
     page.add(boton_entrada)
+    
+
+    
 
 ft.app(target=main)
     
